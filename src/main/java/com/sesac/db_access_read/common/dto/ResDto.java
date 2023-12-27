@@ -23,5 +23,5 @@ public class ResDto<T> {
 	private T tmpSvcRes;
 
 	@JsonInclude(JsonInclude.Include.NON_NULL)
-	private T errorStatus;
+	private ErrorStatus errorStatus;
 }
