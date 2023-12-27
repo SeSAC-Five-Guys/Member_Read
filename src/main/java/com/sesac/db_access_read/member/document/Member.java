@@ -1,8 +1,5 @@
 package com.sesac.db_access_read.member.document;
 
-import java.time.LocalDateTime;
-import java.util.Set;
-
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.LastModifiedDate;
@@ -53,4 +50,6 @@ public class Member{
 	public void changeNickname(String nickname){
 		this.nickname = nickname;
 	}
+
+	public void setDeletedAt(String deletedAt) { this.deletedAt = deletedAt; }
 }

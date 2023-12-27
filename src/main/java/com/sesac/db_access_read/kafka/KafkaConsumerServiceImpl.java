@@ -20,9 +20,9 @@ import lombok.extern.log4j.Log4j2;
 public class KafkaConsumerServiceImpl implements KafkaConsumerService {
 	private final ElasticsearchOperations elasticsearchOperations;
 	private final MemberRepository memberRepository;
+	@Override
 	@KafkaListener(topics = "${variable.kafka.createMember}", groupId = "${spring.kafka.consumer.group-id}")
 	@Transactional
-	@Override
 	public void createMemberListened(Map<String, String> registeredMember) throws IOException{
 
 		Member member = Member.builder()
@@ -40,9 +40,9 @@ public class KafkaConsumerServiceImpl implements KafkaConsumerService {
 		log.info("Success saved CreateMember: " + member.getNickname());
 	}
 
+	@Override
 	@KafkaListener(topics = "${variable.kafka.updateMember}", groupId = "${spring.kafka.consumer.group-id}")
 	@Transactional
-	@Override
 	public void updateMemberListened(Map<String, String> modifiedMember) throws IOException {
 		Member member = memberRepository.findByEmail(modifiedMember.get("email"));
 		member.changePhoneNum(modifiedMember.get("phoneNumber"));
@@ -53,8 +53,14 @@ public class KafkaConsumerServiceImpl implements KafkaConsumerService {
 	}
 
 	@Override
+	@KafkaListener(topics = "${variable.kafka.deleteMember}", groupId = "${spring.kafka.consumer.group-id}")
+	@Transactional
 	public void deleteMemberListened(Map<String, String> deletedMember) throws IOException {
+		Member member = memberRepository.findByEmail(deletedMember.get("email"));
+		member.setDeletedAt(deletedMember.get("deletedAt"));
+		elasticsearchOperations.save(member);
 
+		log.info("Success saved DeletedMember: " + member.getNickname());
 	}
 
 }
