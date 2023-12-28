@@ -1,12 +1,12 @@
-package com.sesac.db_access_read.member.service;
+package com.sesac.member_read_server.member.service;
 
 import org.springframework.stereotype.Service;
 
-import com.sesac.db_access_read.common.dto.ResDto;
-import com.sesac.db_access_read.member.document.Member;
-import com.sesac.db_access_read.member.dto.MemberInfo;
-import com.sesac.db_access_read.member.persistence.MemberRepository;
-import com.sesac.db_access_read.member.serviceUtil.MemberServiceMakeResult;
+import com.sesac.member_read_server.common.dto.ResDto;
+import com.sesac.member_read_server.member.document.Member;
+import com.sesac.member_read_server.member.dto.MemberInfo;
+import com.sesac.member_read_server.member.persistence.MemberRepository;
+import com.sesac.member_read_server.member.serviceUtil.MemberServiceMakeResult;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;

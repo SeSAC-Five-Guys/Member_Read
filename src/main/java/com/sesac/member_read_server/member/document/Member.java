@@ -1,4 +1,4 @@
-package com.sesac.db_access_read.member.document;
+package com.sesac.member_read_server.member.document;
 
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;

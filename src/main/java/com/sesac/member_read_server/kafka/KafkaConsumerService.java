@@ -1,4 +1,4 @@
-package com.sesac.db_access_read.kafka;
+package com.sesac.member_read_server.kafka;
 
 import java.io.IOException;
 import java.util.Map;

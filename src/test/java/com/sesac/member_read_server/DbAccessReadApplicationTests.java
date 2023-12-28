@@ -1,4 +1,4 @@
-package com.sesac.db_access_read;
+package com.sesac.member_read_server;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

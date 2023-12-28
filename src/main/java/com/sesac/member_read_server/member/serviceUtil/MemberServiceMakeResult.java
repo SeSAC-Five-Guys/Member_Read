@@ -1,10 +1,10 @@
-package com.sesac.db_access_read.member.serviceUtil;
+package com.sesac.member_read_server.member.serviceUtil;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 
-import com.sesac.db_access_read.common.dto.ErrorStatus;
-import com.sesac.db_access_read.common.dto.ResDto;
+import com.sesac.member_read_server.common.dto.ErrorStatus;
+import com.sesac.member_read_server.common.dto.ResDto;
 
 import lombok.extern.log4j.Log4j2;
 

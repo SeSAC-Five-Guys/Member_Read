@@ -1,4 +1,4 @@
-package com.sesac.db_access_read.member.dto;
+package com.sesac.member_read_server.member.dto;
 
 import lombok.Builder;
 import lombok.Getter;

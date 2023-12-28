@@ -1,4 +1,4 @@
-package com.sesac.db_access_read.member.controller;
+package com.sesac.member_read_server.member.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.sesac.db_access_read.common.dto.ResDto;
-import com.sesac.db_access_read.member.service.MemberService;
-import com.sesac.db_access_read.member.serviceUtil.MemberServiceMakeResult;
+import com.sesac.member_read_server.common.dto.ResDto;
+import com.sesac.member_read_server.member.service.MemberService;
+import com.sesac.member_read_server.member.serviceUtil.MemberServiceMakeResult;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;

@@ -1,4 +1,4 @@
-package com.sesac.db_access_read.common.dto;
+package com.sesac.member_read_server.common.dto;
 
 import org.springframework.http.HttpStatus;
 

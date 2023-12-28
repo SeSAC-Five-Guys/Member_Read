@@ -1,7 +1,6 @@
-package com.sesac.db_access_read.config;
+package com.sesac.member_read_server.config;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;

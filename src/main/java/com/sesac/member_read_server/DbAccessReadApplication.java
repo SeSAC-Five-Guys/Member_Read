@@ -1,4 +1,4 @@
-package com.sesac.db_access_read;
+package com.sesac.member_read_server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

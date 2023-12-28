@@ -1,4 +1,4 @@
-package com.sesac.db_access_read.kafka;
+package com.sesac.member_read_server.kafka;
 
 import java.io.IOException;
 import java.util.Map;
@@ -8,8 +8,8 @@ import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.sesac.db_access_read.member.document.Member;
-import com.sesac.db_access_read.member.persistence.MemberRepository;
+import com.sesac.member_read_server.member.document.Member;
+import com.sesac.member_read_server.member.persistence.MemberRepository;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
