@@ -21,7 +21,7 @@ public class MemberServiceImpl implements MemberService{
 	private final MemberServiceMakeResult makeResult;
 	private final MemberServiceValidating validating;
 	@Override
-	public ResDto readSingleMember(String email, String password) {
+	public ResDto readSingleMember_login(String email, String password) {
 		try {
 			Member existMember = memberRepository.findByEmail(email);
 			if(existMember == null){
