@@ -21,8 +21,8 @@ public enum ErrorStatus {
 	INVALID_INPUT_EMAIL(400, "Member-00", "올바른 이메일 형식이 아닙니다."),
 	NOT_EQUALS_INPUT_CHANGED_PW(400, "Member-00", "변경할 비밀번호 입력과 변경된 비밀번호 입력이 일치하지 않습니다."),
 	NOT_EQUALS_INPUT_CURRENT_PW(400, "Member-00", "현재 입력한 비밀번호가 실제 현재 비밀번호와 일치하지 않습니다."),
-	NOT_EXIST_EMAIL(400, "Member-00", "Email이 존재하지 않습니다."),
-	NOT_EXIST_PW(400, "Member-00", "Email은 올바르지만 비밀번호가 잘못되었습니다.");
+	NOT_EXIST_EMAIL(400, "Member-00", "이메일이 존재하지 않는 경우."),
+	NOT_EXIST_PW(400, "Member-00", "이메일은 존재하지만 비밀번호가 존재하지 않는 경우.");
 
 
 	private int status;

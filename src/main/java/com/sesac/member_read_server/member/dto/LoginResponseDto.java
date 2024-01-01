@@ -5,7 +5,7 @@ import lombok.Getter;
 
 @Getter
 @Builder
-public class MemberInfo {
+public class LoginResponseDto {
 	private String createdAt;
 	private String updatedAt;
 	private String deletedAt;
